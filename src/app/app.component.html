@@ -1,2 +1,45 @@
-<button class="btn btn-primary">Boton</button>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Venezolana</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="bg-gray-800 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-white text-2xl font-bold">Sabores de venezuela</a>
+        <div class="lg:hidden">
+            <button id="toggle" class="text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <ul class="hidden lg:flex space-x-4">
+            <li class="text-white">
+                <a routerLink="">Home</a>
+            </li>
+            <li class="text-white">
+                <a routerLink="products">Productos</a>
+            </li>
+            <li class="text-white">
+                <a routerLink="contact">Contacto</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+    document.getElementById('toggle').addEventListener('click', function() {
+        document.getElementById('menu').classList.toggle('hidden');
+    });
+</script>
+
+</body>
+</html>
+
 <router-outlet />
+
