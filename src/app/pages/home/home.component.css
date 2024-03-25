@@ -1,0 +1,19 @@
+.container{
+    padding: 15px;
+    text-align: center;
+    justify-items: center;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+img{
+    width: 50%;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
